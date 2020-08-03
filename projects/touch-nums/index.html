@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body onload="init()">
+    <h1>Numbers</h1>
+    <div class="main">
+        <div class="level">
+            <input type="radio" id="easy" onclick="levelSetting(this)" name="level" value="4" checked/>
+            <label for="radio-one">Easy</label>
+            <input type="radio" onclick="levelSetting(this)" name="level" value="5" />
+            <label for="radio-two">Hard</label>
+            <input type="radio" onclick="levelSetting(this)" name="level" value="6" />
+            <label for="radio-two">Extreme!</label>
+        </div>
+        <button onclick=init() class="startBtn">New Game</button>
+        <div class="infoNum">next number</div>
+        <div class="infoTime">00.000</div>
+        <div class="tableD">
+            <table class="tboard"></table>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

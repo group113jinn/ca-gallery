@@ -1,0 +1,124 @@
+html {
+    background: url(img/bcg.jpg);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: deeppink;
+    text-shadow: 2px 2px 3px grey;
+}
+
+.main {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 650px;
+}
+
+.picDiv {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    width: 800px;
+    height: 450px;
+}
+
+.pic1 {
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    height: 300px;
+    width: 350px;
+}
+
+.pic2 {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    height: 300px;
+    width: 350px;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+    border: 8px solid orange;
+}
+
+.info {
+    position: absolute;
+    text-align: center;
+    text-shadow: 3px 3px 8px grey;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding-top: 10px;
+    color: blue;
+    background-color: rgb(213, 224, 214);
+    right: 130px;
+    bottom: 20px;
+    height: 60px;
+    width: 500px;
+    border: 5px solid darkorange;
+    border-radius: 15px;
+    background-color: lightpink;
+}
+
+.restart {
+    border: 5px solid orange;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    right: 330px;
+    bottom: 200px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+}
+
+.restart:hover {
+    color: yellow;
+    border: 5px solid yellow;
+    cursor: pointer;
+    background-color: red;
+}
+
+.first {
+    position: absolute;
+    left: 300px;
+    color: green;
+    text-shadow: 2px 2px 4px grey;
+    font-size: 28px;
+    bottom: 110px;
+    height: 60px;
+    width: 400px;
+    border: 5px solid palevioletred;
+    border-radius: 15px;
+    background-color: rgb(219, 169, 148);
+}
+
+.second {
+    position: absolute;
+    color: green;
+    text-shadow: 2px 2px 4px grey;
+    font-size: 28px;
+    bottom: 30px;
+    left: 300px;
+    height: 60px;
+    width: 400px;
+    border: 5px solid palevioletred;
+    border-radius: 15px;
+    background-color: rgb(219, 169, 148);
+}
+
+.second:hover,
+.first:hover {
+    cursor: pointer;
+    background-color: pink;
+}
