@@ -12,10 +12,10 @@ function createProject(id, name, url) {
 }
 
 function createProjects() {
-    gProjects.push(createProject('minesweeper', 'Minesweeper', 'projects/Minesweeper/index.html'));
-    gProjects.push(createProject('book-shop', 'Book-shop', 'projects/Book-shop/index.html'));
-    gProjects.push(createProject('touch-nums', 'Touch-nums', 'projects/Touch-nums/index.html'));
-    gProjects.push(createProject('names', 'Names', 'projects/Names/index.html'));
+    gProjects.push(createProject('minesweeper', 'Minesweeper', 'projects/minesweeper/index.html'));
+    gProjects.push(createProject('book-shop', 'Book-shop', 'projects/book-shop/index.html'));
+    gProjects.push(createProject('touch-nums', 'Touch-nums', 'projects/touch-nums/index.html'));
+    gProjects.push(createProject('names', 'Names', 'projects/names/index.html'));
     console.log(gProjects);
 }
 
