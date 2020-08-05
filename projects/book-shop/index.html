@@ -10,11 +10,21 @@
 
 <body onload="onInit()">
     <div class="container">
-        <div class="header-wrap">
-            <h1>Book Store</h1>
+        <div class="main-header-wrap">
+            <div class="header-wrap">
+                <h1 data-trans="title">Book Store</h1>
+            </div>
         </div>
-        <div class="add-book-btn-wrap">
-            <button class="add-book-btn" onclick="onAddBook()">Add New Book</button>
+        <div class="select-add">
+            <div class="main-select-wrap">
+                <select class="select-wrap" onchange="onSetLang(this.value)">
+            <option value="en">English</option>
+            <option value="he">עברית</option>
+        </select>
+            </div>
+            <div class="add-book-btn-wrap">
+                <button class="add-book-btn" data-trans="add-btn" onclick="onAddBook()">Add New Book</button>
+            </div>
         </div>
         <div class="table-wrap">
             <table class="book-table">
@@ -23,37 +33,51 @@
                         <span>Id</span>
                     </th>
                     <th>
-                        <span class="title info" onclick="onTitleSort()">Title</span>
+                        <span class="title info" data-trans="table-title" onclick="onTitleSort()">Title</span>
                     </th>
                     <th>
-                        <span class="price info" onclick="onPriceSort()">Price</span>
+                        <span class="price info" data-trans="table-price" onclick="onPriceSort()">Price</span>
                     </th>
                     <th>
-                        <span>Actions</span>
+                        <span data-trans="table-actions">Actions</span>
                     </th>
                 </thead>
                 <tbody class="book-wrap">
-                  
+
                 </tbody>
             </table>
         </div>
     </div>
-    <span>Current Page: </span><span class="page-current"></span>
-    <button class="next-page" onclick="onNextPage()">Next Page</button>
+    <div class="next-page-wrap">
+        <span class="text-pg-current" data-trans="page-current">Current Page: </span><span class="page-current"></span>
+        <button class="next-page" data-trans="next-page-btn" onclick="onNextPage()">Next Page</button>
+    </div>
     <div class="modal">
-        <div class="modal-content" >
-          <span onclick="onCloseModal()" class="close-btn">&times;</span>
-          <div class="book-pic"></div>
-          <div class="book-description"></div>
-          <div class="book-price"></div>
-          <div class="book-rating"></div>
+        <div class="modal-content">
+            <span onclick="onCloseModal()" class="close-btn">&times;</span>
+            <div class="book-pic"></div>
+            <div class="book-description">
+            </div>
+            <div class="book-price"></div>
+            <div class="book-rating"></div>
         </div>
-      </div>
+        <div  class="modal-content">
+            <form>
+                <div class="input-update">
+                    <input class="price-update" data-trans="price-update-placeholder" placeholder="Price update"></input>
+                    <input class="title-update" data-trans="title-update-placeholder" placeholder="Title update"></input>
+                    <textarea class="overview-update" data-trans="overview-update-placeholder" placeholder="Bookreview"></textarea>
+                   <div class="confirm-btn"></div>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <script src="js/book-controller.js"></script>
     <script src="js/book-service.js"></script>
     <script src="js/storage-service.js"></script>
     <script src="js/util-service.js"></script>
+    <script src="js/i18n-service.js"></script>
 </body>
 
 </html>
